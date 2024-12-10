@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdjs.cloudfare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jason maniplation and Hashing</h1>
+        <h2>a) convert Json to Javascript Object</h2>
+        <textarea placeholder="Enter JSON here" id="jsoinput"></textarea>
+        <button onclick="convert.JsonToObject()">Convert to JS Object</button>"
+        <p id="jsonOutput"></p>
+
+        <h2>b)covert JSON to date</h2>
+        <textarea placeholder="'enter Json with a 'date' field" id="jsonDateInput"></textarea>
+        <button onclick="convert.JsonToDate()">Convert to date </button>
+        <p id="dateOutput"></p>
+         
+
+        <h2>c)Create a hash from a string </h2>
+        <textarea placeholder="'enter Json or csv here" id="csvJsoninput"></textarea>
+        <button onclick="convert.JsonToCSV()">Json to Csv </button>
+        <button onclick="convert.CSVToJson()">Csv to Json </button>
+        <p id="csvOutput"></p>
+        <p id="jsonfromCsvOutput"></p>
+
+        <h2>d)Create a Hash from string</h2>
+        <textarea placeholder="Enter string to hash" id="hashinput"></textarea>
+        <button onclick="createHash()">genrate Hash </button>
+        <p id="hashOutput"></p>
+         
+    </div>
+    <script src="'script.js"></script>
+</body>
+</html>
